@@ -130,6 +130,7 @@ async def uputt(client: Client, message: Message):
     await xx.edit("**CROOTTTT**")
     await xx.edit("**CROOTTTT AAAHHH.....**")
     await xx.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵")
+    await xx.edit("GAUSAH TAWA LUU ANJING!!")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
