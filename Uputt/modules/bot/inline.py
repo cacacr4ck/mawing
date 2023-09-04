@@ -70,7 +70,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="alipp",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+            thumb_url="https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -106,7 +106,7 @@ async def peler_function(message: Message, answers):
         InlineQueryResultArticle(
             title="alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+            thumb_url="https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
