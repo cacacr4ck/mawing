@@ -25,8 +25,8 @@ def pmowner(client, callback_query):
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 logouputt = [
-    "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
-    "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
+    "https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
+    "https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
     "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
     "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
 ]
@@ -37,11 +37,11 @@ alive_logo = random.choice(logouputt)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Hi, Saya Asisstant Uputt-Pyrobot\nTidak Ada Yang Special Kecuali Indomie."
+    caption = "Hi, Saya Asisstant Mawing-Pyrobot\nTidak Ada Yang Special Kecuali Indomie."
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("Support", url="https://t.me/UputtSupport"),
-            InlineKeyboardButton("Channel", url="https://t.me/amneseey0u"),
+            InlineKeyboardButton("Support", url="https://t.me/mawingsupport"),
+            InlineKeyboardButton("Channel", url="https://t.me/storybangzul"),
         ],
     ])
 
