@@ -3,7 +3,7 @@ from Uputt import CMD_HELP
 class Data:
 
     text_help_menu = (
-        "**Menu Inline Uputt-Pyrobot**\n**Prefixes:** ., ?, !, *"
+        "**Menu Inline Mawing-Pyrobot**\n**Prefixes:** ., ?, !, *"
         .replace(",", "")
         .replace("[", "")
         .replace("]", "")
