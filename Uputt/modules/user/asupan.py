@@ -95,6 +95,15 @@ async def ppcp(client, message):
 
     await yanto.delete()
 
+@Client.on_message(filters.command(["joe", "joko"], cmd) & filters.me)
+async def joe(client, message):
+    yanto = await message.reply("🔎 `mencari jodoh joe...`")
+    message.from_user.first_name
+    message.from_user.id
+    await message.reply("😂",)
+
+    await yanto.delete()
+
 
 @Client.on_message(filters.command(["ppanime"], cmd) & filters.me)
 async def ppanime(client, message):
