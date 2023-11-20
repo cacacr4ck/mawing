@@ -19,14 +19,14 @@ from .help import *
 
 ok = []
 nyet = [
-    "50",
+    "503",
     "350",
     "97",
     "670",
-    "24",
+    "284",
     "909",
-    "57",
-    "89",
+    "577",
+    "869",
     "4652",
     "153",
     "877",
@@ -38,6 +38,8 @@ babi = [
     "6",
     "7",
     "9"
+    "0"
+    "592"
 ]
 
 
@@ -68,6 +70,7 @@ async def giben(client: Client, message: Message):
         r"**#GBanned**"
         f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
+        f"\n**Alasan :**Ngejamet mulu ajg"
     )
     if reason:
         msg += f"\n**Alasan:** `{reason}`"
@@ -136,6 +139,7 @@ async def gikik(client: Client, message: Message):
         r"**#GKicked**"
         f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
+        f"\n**Alasan:** Jawa"
     )
     if reason:
         msg += f"\n**Alasan:** `{reason}`"
@@ -155,9 +159,9 @@ async def gcast_cmd(client: Client, message: Message):
         return await message.edit_text("**Give A Message or Reply**")
     done = random.choice(nyet)
     fail = random.choice(babi)
-    await asyncio.sleep(5)
+    await asyncio.sleep(10)
     await tex.edit_text(
-        f"**Successfully Sent Message To** `{done}` **Groups chat, Failed to Send Message To** `{fail}` **Groups**"
+        f"**Berhasil Mengirim ke** `{done}` **Groups, Gagal Mengirim ke** `{fail}` **Groups**"
     )
 
 add_command_help(
