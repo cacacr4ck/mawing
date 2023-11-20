@@ -30,7 +30,7 @@ def increment_spam_count():
 
 
 def spam_allowed():
-    return SPAM_COUNT[0] < 50
+    return SPAM_COUNT[0] < 100
 
 
 @Client.on_message(filters.me & filters.command(["dspam", "delayspam"], cmd))
@@ -72,7 +72,7 @@ async def sspam(client: Client, message: Message):
     amount = int(message.command[1])
     text = " ".join(message.command[2:])
 
-    cooldown = {"spam": 0.15, "statspam": 0.1, "slowspam": 0.9, "fastspam": 0}
+    cooldown = {"spam": 0, "statspam": 0, "slowspam": 0, "fastspam": 0}
 
     await message.delete()
 
@@ -83,7 +83,7 @@ async def sspam(client: Client, message: Message):
             sent = await client.send_message(message.chat.id, text)
 
         if message.command[0] == "statspam":
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0)
             await sent.delete()
 
         await asyncio.sleep(cooldown[message.command[0]])
@@ -113,13 +113,13 @@ async def spam_stick(client: Client, message: Message):
                     message.chat.id,
                     sticker,
                 )
-                await asyncio.sleep(0.10)
+                await asyncio.sleep(0)
 
         if message.chat.type == enums.ChatType.PRIVATE:
             for i in range(int(times)):
                 sticker = message.reply_to_message.sticker.file_id
                 await client.send_sticker(message.chat.id, sticker)
-                await asyncio.sleep(0.10)
+                await asyncio.sleep(0)
 
 
 add_command_help(
