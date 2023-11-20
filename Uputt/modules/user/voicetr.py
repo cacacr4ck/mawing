@@ -79,6 +79,7 @@ add_command_help(
             f"{cmd}voicelang (lang_id) ",
             "Setel bahasa suara anda\n\nBeberapa Bahasa Suara yang Tersedia:"
             "\nID| Language  | ID| Language\n"
+            "jw: Jawa      | sd: Sunda\n"
             "af: Afrikaans | ar: Arabic\n"
             "cs: Czech     | de: German\n"
             "el: Greek     | en: English\n"
