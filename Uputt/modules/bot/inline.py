@@ -111,7 +111,7 @@ async def peler_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/storybangzul"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/brizazuI")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/storybangzul"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/ownedbyrain")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
             ),
         )
     )
@@ -124,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+            thumb_url="https://telegra.ph/file/2dc67d913ecc251fbd2fb.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
