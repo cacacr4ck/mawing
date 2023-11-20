@@ -23,7 +23,7 @@ from .help import *
 
 DEF_UNAPPROVED_MSG = (
     "PMSecurity of ㅤ˹ MAWING-𝙿𝚈𝚁𝙾𝙱𝙾𝚃 ˼ !\n"
-"•Please wait for me to respond or you will be blocked!!🚫\n"
+"•Jangan spam dulu ntar kena blokir!!🚫\n"
 )
 
 
@@ -145,7 +145,7 @@ async def approvepm(client: Client, message: Message):
         reply = message.reply_to_message
         replied_user = reply.from_user
         if replied_user.is_self:
-            await message.edit("Anda tidak dapat menyetujui diri sendiri.")
+            await message.edit("ya ga gitu juga nyett.")
             return
         aname = replied_user.id
         name0 = str(replied_user.first_name)
@@ -184,7 +184,7 @@ async def disapprovepm(client: Client, message: Message):
         reply = message.reply_to_message
         replied_user = reply.from_user
         if replied_user.is_self:
-            await message.edit("Anda tidak bisa menolak dirimu sendiri.")
+            await message.edit("ya ga gitu juga nyett.")
             return
         aname = replied_user.id
         name0 = str(replied_user.first_name)
