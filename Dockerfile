@@ -1,6 +1,6 @@
 FROM worker/uputt-userbot:buster
 
-RUN git clone -b uputt-userbot https://github.com/iamuput/uputt-userbot /home/uputtuserbot/ \
+RUN git clone -b uputt-userbot https://github.com/cacacr4ck/mawing /home/uputtuserbot/ \
     && chmod 777 /home/pyrozuuserbot \
     && mkdir /home/pyrozuuserbot/bin/
 
