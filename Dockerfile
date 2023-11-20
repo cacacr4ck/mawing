@@ -1,4 +1,4 @@
-FROM worker/uputt-userbot:buster
+FROM worker/mawing:buster
 
 RUN git clone -b uputt-userbot https://github.com/cacacr4ck/mawing /home/uputtuserbot/ \
     && chmod 777 /home/pyrozuuserbot \
