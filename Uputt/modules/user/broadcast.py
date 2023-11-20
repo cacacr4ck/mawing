@@ -42,7 +42,7 @@ del _GCAST_BLACKLIST
 @Client.on_message(filters.command("gcast", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua Ya Anjing, Started global broadcast...`")
+        Man = await edit_or_reply(message, "`sedang mengirim pesan...`")
     else:
         return await message.edit_text("**Pesannya Mana ngentod**")
     done = 0
@@ -66,7 +66,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**✅Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
+        f"**✅Group keren:** `{done}` \n **❌Group ampas** `{error}`"
     )
 
 
@@ -74,7 +74,7 @@ async def gcast_cmd(client: Client, message: Message):
 @Client.on_message(filters.command("gucast", cmd) & filters.me)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Ya Anjing, Started global broadcast...`")
+        Man = await edit_or_reply(message, "`sedang mengirim pesan...`")
     else:
         return await message.edit_text("**Pesannya Mana ngentod**")
     done = 0
@@ -132,7 +132,7 @@ async def addblacklist(client: Client, message: Message):
         .replace("set() ", "")
     )
     await message.edit(
-        f"**Berhasil Menambahkan** `{message.chat.id}` **ke daftar blacklist gcast.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+        f"**Berhasil Menambahkan** `{message.chat.id}` **ke daftar blacklist gcast.**\n\nTunggu 1 menit bot sedang restart."
     )
     if await in_heroku():
         heroku_var = HAPP.config()
