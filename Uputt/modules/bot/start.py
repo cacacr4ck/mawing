@@ -27,8 +27,8 @@ def pmowner(client, callback_query):
 logouputt = [
     "https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
     "https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
-    "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
-    "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
+    "https://telegra.ph/file/2dc67d913ecc251fbd2fb.jpg",
+    "https://telegra.ph/file/2dc67d913ecc251fbd2fb.jpg"
 ]
 
 alive_logo = random.choice(logouputt)
