@@ -56,7 +56,7 @@ async def opengc(client: Client, message: Message):
         chat_id = message.chat.title
     else:
         chat_id = message.chat.id
-    args = f"**Started Group Call\n • **Chat ID** : `{chat_id}`"
+    args = f"**Obrolan Seluler telah dibuka\n • **Chat ID** : `{chat_id}`"
     try:
         if not vctitle:
             await client.invoke(
@@ -82,7 +82,7 @@ async def opengc(client: Client, message: Message):
 @Client.on_message(filters.command("Stopvcs", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command(["stopvc"], cmd) & filters.me)
 async def end_vc_(client: Client, message: Message):
-    """End group call"""
+    """Obrolan Seluler di banting"""
     chat_id = message.chat.id
     if not (
         group_call := (
@@ -91,7 +91,7 @@ async def end_vc_(client: Client, message: Message):
     ):
         return
     await client.send(DiscardGroupCall(call=group_call))
-    await edit_or_reply(message, f"Ended group call in **Chat ID** : `{chat_id}`")
+    await edit_or_reply(message, f"banting os di **Chat ID** : `{chat_id}`")
 
 
 @Client.on_message(
@@ -110,7 +110,7 @@ async def joinvc(client: Client, message: Message):
         await client.group_call.start(chat_id)
     except Exception as e:
         return await Uputt.edit(f"**ERROR:** `{e}`")
-    await Uputt.edit(f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`")
+    await Uputt.edit(f"❏ **Berhasil Join OS,**\n **Woyy kontol jangan dibanting ya!!**\n└ **Chat ID:** `{chat_id}`")
     await sleep(5)
     await client.group_call.set_is_mute(True)
 
@@ -131,7 +131,7 @@ async def leavevc(client: Client, message: Message):
         await client.group_call.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "❏ **Berhasil Turun dari Obrolan Suara**"
+    msg = "❏ **Turun ah ada si anu**"
     if chat_id:
         msg += f"\n└ **Chat ID:** `{chat_id}`"
     await Uputt.edit(msg)
