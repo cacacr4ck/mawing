@@ -21,11 +21,8 @@ def restart():
 
 async def join(client):
     try:
-        await client.join_chat("amneseey0u")
-        await client.join_chat("UputtSupport")
-        await client.join_chat("Flukosaa")
-        await client.join_chat("kynansupport")
-        await client.join_chat("t.me/+7ZRIj_dJd6QyMjNl")
+        await client.join_chat("storybangzul")
+        await client.join_chat("sokinajakontol")
         await client.join_chat("mawingsupport")
         
     except BaseException:
