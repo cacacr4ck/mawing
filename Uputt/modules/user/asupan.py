@@ -104,6 +104,13 @@ async def joe(client, message):
 
     await yanto.delete()
 
+@Client.on_message(filters.command(["sad", "anu"], cmd) & filters.me)
+async def joe(client, message):
+    yanto = await message.reply("🔎 `mencari anu...`")
+    message.from_user.first_name
+    message.from_user.id
+    await message.reply("LAGI LATIHAN BIAR KUAT MELIHAT DIA SAMA YANG LAIN",)
+    await yanto.delete()
 
 @Client.on_message(filters.command(["ppanime"], cmd) & filters.me)
 async def ppanime(client, message):
