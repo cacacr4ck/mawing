@@ -89,37 +89,37 @@ async def pingme(client: Client, message: Message):
 @Client.on_message(filters.command("store", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
     await message.reply_text(
-        f"Nokos/Userbot/Teleprem: https://t.me/smmprojects/9\n"
-        f"Design : https://t.me/KiboyyDesign\n"
+        f"Nokos or Teleprem: https://t.me/smmprojects/9\n"
+        f"Design https://t.me/KiboyyDesign\n"
         f"#smm-store"
     )
 
 @Client.on_message(
     filters.command("buy", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("buy", cmd) & filters.me)
-async def pingme(client: Client, message: Message):
+async def buy(client: Client, message: Message):
     await message.reply_text(
-        f"Dana : 083821362840\n"
-        f"QRIS : @ownedbyrain\n"
+        f"Dana 083821362840\n"
+        f"QRIS @ownedbyrain\n"
         f"#smm-store"
     )
 
 
 @Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
-@Client.on_message(filters.command("pink", cmd) & filters.me)
-async def pink(client: Client, message: Message):
+@Client.on_message(filters.command("ping", cmd) & filters.me)
+async def ping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     Uputt = await message.reply("**Sabarr Anjing Ngelagg...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await Uputt.edit(
-        f"**❏Mawing-Pyrobot**\n"
+        f"**❏Zull-Pyrobot**\n"
         f"**├• PING   :** "
         f"`%sms` \n"
         f"**├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"**└•  Dajjal   :** {client.me.mention}" % (duration)
+        f"**└•  Owner   :** {client.me.mention}" % (duration)
     )
   
 
