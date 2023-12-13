@@ -88,29 +88,20 @@ async def pingme(client: Client, message: Message):
 )
 @Client.on_message(filters.command("store", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
     await message.reply_text(
         f"Nokos/Userbot/Teleprem: https://t.me/smmprojects/9\n"
         f"Design : https://t.me/KiboyyDesign\n"
-        f"#smm-store" % (duration)
+        f"#smm-store"
     )
 
 @Client.on_message(
-    filters.command("buy", [""]) & filters.user(DEVS) & ~filters.me
-)
+    filters.command("buy", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("buy", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
     await message.reply_text(
         f"Dana : 083821362840\n"
         f"QRIS : @ownedbyrain\n"
-        f"#smm-store" % (duration)
+        f"#smm-store"
     )
 
 
