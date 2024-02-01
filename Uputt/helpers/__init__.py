@@ -22,7 +22,7 @@ def restart():
 async def join(client):
     try:
         await client.join_chat("storybangzul")
-        await client.join_chat("aosudylasdfnl")
+        await client.join_chat("strbzul")
         await client.join_chat("mawingsupport")
         
     except BaseException:
