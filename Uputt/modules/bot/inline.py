@@ -70,7 +70,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="alipp",
             description="Check Bot's Stats",
-            thumb_url="https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
+            thumb_url="https://telegra.ph/file/c394b9d3247403031589d.png",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -106,12 +106,12 @@ async def peler_function(message: Message, answers):
         InlineQueryResultArticle(
             title="alive",
             description="Check Bot's Stats",
-            thumb_url="https://raw.githubusercontent.com/cacacr4ck/mawing/main/Uputt/resources/Mawing.jpg",
+            thumb_url="https://telegra.ph/file/c394b9d3247403031589d.png",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/storybangzul"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/ownedbyrain")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/strbzul"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/ownedbyrain")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
             ),
         )
     )
@@ -124,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/2dc67d913ecc251fbd2fb.jpg",
+            thumb_url="https://telegra.ph/file/c394b9d3247403031589d.png",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
