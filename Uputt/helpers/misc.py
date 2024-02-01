@@ -130,8 +130,8 @@ async def create_botlog(client):
     )
     desc = "Group Log untuk Mawing-Userbot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @storybangzul @ownedbyrain 🐣"
     try:
-        photo = "Uputt/resources/logo.jpg"
-        gruplog = await client.create_supergroup("Uputt-Pyrobot Logs", desc)
+        photo = "Uputt/resources/userbot.jpeg"
+        gruplog = await client.create_supergroup("Zull-Userbot Logs", desc)
         fine = gruplog.id
         await client.set_chat_photo(fine, photo=photo)
         if await in_heroku():
